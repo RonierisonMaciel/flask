@@ -1,13 +1,13 @@
 from flask import Flask
 
-app = Flask(__name__)
+application = Flask(__name__)
 
 
-@app.route("/")
+@application.route("/")
 def say_hello():
     return "<h1>Hello World!</h1>\n"
 
 
 if __name__ == "__main__":
-    app.debug = True
-    app.run()
+    application.debug = True
+    application.run()
